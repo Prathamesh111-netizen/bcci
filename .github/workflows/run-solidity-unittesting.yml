@@ -17,6 +17,11 @@ jobs:
         with:
           test-path: 'tests/Ballot_test.sol'
           compiler-version: '0.8.15'
+      - name: Run SUT action for CoinTest
+        uses: EthereumRemix/sol-test@v1.2
+        with:
+          test-path: 'tests/4_Coin_test.sol'
+          compiler-version: '0.8.15'
       # - name: Run SUT Action with custom fork
       #   uses: EthereumRemix/sol-test@v1.2
       #   with:
